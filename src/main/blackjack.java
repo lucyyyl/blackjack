@@ -116,6 +116,12 @@ public class blackjack {
                     System.out.println(" Dealer's total score is: " + dealerHand.cardTotal() + ".");
                     System.out.print("Dealer is bust - You win!!");
                 }
+                if(dealerHand.cardTotal() == playerHand.cardTotal()){
+                    dealerHand.dealerprintHand();
+                    System.out.println("Dealer's total score is: " + dealerHand.cardTotal() + ".");
+                    System.out.println("It's a draw!");
+
+                }
            }
         }
     }
