@@ -16,8 +16,8 @@ public class blackjack {
 
 
         for (int i = 0; i < 2; i++) {
-            playerHand.addCard(cardDeck.getcard());
-            dealerHand.addCard(cardDeck.getcard());
+            playerHand.addCard(cardDeck.getCard());
+            dealerHand.addCard(cardDeck.getCard());
         }
 
         System.out.println("Welcome to blackjack");
@@ -50,7 +50,7 @@ public class blackjack {
                 String choice = user_input.next();
 
                 if (choice.trim().equals("t")) {
-                    playerHand.addCard(cardDeck.getcard());
+                    playerHand.addCard(cardDeck.getCard());
                     playerHand.cardTotal();
                     if (playerHand.cardTotal() == 21) {
                         playerHand.printHand();
@@ -98,7 +98,7 @@ public class blackjack {
                    while (dealerHand.cardTotal() < playerHand.cardTotal()) {
                        dealerHand.dealerprintHand();
                        System.out.println(" Dealer's total score is: " + dealerHand.cardTotal() + ".");
-                       dealerHand.addCard(cardDeck.getcard());
+                       dealerHand.addCard(cardDeck.getCard());
                    }
                }
                 if (dealerHand.cardTotal() == 21){

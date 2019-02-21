@@ -10,8 +10,8 @@ public class Deck {
     ArrayList<String> shuffled = new ArrayList<>();
 
     void init(){
-        makedeck();
-        shuffledeck();
+        makeDeck();
+        shuffleDeck();
     }
 
     // Make the deck
@@ -25,7 +25,7 @@ public class Deck {
     };
 
 
-    public void makedeck() {
+    public void makeDeck() {
 
         int i = 0;
 
@@ -37,7 +37,7 @@ public class Deck {
         }
     }
 
-    public ArrayList<String> shuffledeck() {
+    public ArrayList<String> shuffleDeck() {
         // Shuffle the deck
         Collections.addAll(shuffled, Deck);
         Collections.shuffle(shuffled);
@@ -45,7 +45,7 @@ public class Deck {
     }
 
 
-    public String getcard(){
+    public String getCard(){
         // Get the first card from the shuffled deck then remove it
         String card = shuffled.get(0);
         shuffled.remove(0);
